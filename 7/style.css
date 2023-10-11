@@ -107,6 +107,7 @@ h1{
 
 .split.left, .split.right, .split.left::before, .split.right::before {
     transition: all var(--speed) ease-in-out;
+    
 }
 
 .hover-left .left{
@@ -114,17 +115,26 @@ width: var(--hover-width)
 }
 
 .hover-left .right{
-    width: var(--other-width)
+    width: var(--other-width);
     }
+
+.hover-left .right h1{
+        font-size: 2rem;
+        }
+    
 
 .hover-right .right{
 width: var(--hover-width)
 }
 
-.hover-right .leftt{
+.hover-right .left{
     width: var(--other-width)
     }
 
+ .hover-right .left h1{
+        font-size: 2rem;
+        }
+       
 @media (max-width: 800px) {
     h1 {
         font-size: 2rem;
